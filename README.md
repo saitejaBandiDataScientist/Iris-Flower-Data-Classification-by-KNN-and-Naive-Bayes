@@ -1,46 +1,4 @@
 # Iris-Flower-Data-Classification-by-KNN-and-Navie-Bayes
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iris Species Classification Web Application</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            background-color: #f4f6f9;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        code, pre {
-            background: #eee;
-            padding: 10px;
-            display: block;
-            overflow-x: auto;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        ul {
-            margin-left: 20px;
-        }
-    </style>
-</head>
-<body>
-
 <h1>Iris Species Classification Web Application</h1>
 
 <h2>Project Overview</h2>
@@ -53,44 +11,19 @@ measurements and get real-time predictions along with model performance metrics.
 
 <h2>Features</h2>
 
-<h3>1. Interactive Prediction Interface</h3>
+<h3>Interactive Prediction Interface</h3>
 <ul>
     <li>Input fields for four flower measurements</li>
     <li>Toggle between KNN and Naive Bayes models</li>
     <li>Real-time species prediction (Setosa, Versicolor, Virginica)</li>
 </ul>
 
-<h3>2. Model Performance Dashboard</h3>
+<h3>Model Performance Dashboard</h3>
 <ul>
     <li>Accuracy score</li>
     <li>Classification report</li>
     <li>Confusion matrix</li>
     <li>Dynamic display based on selected model</li>
-</ul>
-
-<h3>3. Visual Design</h3>
-<ul>
-    <li>Modern glass-morphism UI</li>
-    <li>Responsive design</li>
-    <li>Smooth animations</li>
-    <li>Interactive elements</li>
-</ul>
-
-<h2>Architecture</h2>
-
-<h3>Frontend</h3>
-<ul>
-    <li>HTML, CSS, JavaScript</li>
-    <li>Bootstrap 5</li>
-    <li>Custom glass-morphism UI</li>
-</ul>
-
-<h3>Backend</h3>
-<ul>
-    <li>Flask framework</li>
-    <li>Pickle for model loading</li>
-    <li>JSON for metrics storage</li>
-    <li>Jinja2 templating</li>
 </ul>
 
 <h2>Machine Learning Models</h2>
@@ -118,26 +51,6 @@ measurements and get real-time predictions along with model performance metrics.
 <tr><td>Iris Virginica</td><td>2</td><td>50</td></tr>
 </table>
 
-<h2>Model Performance</h2>
-
-<h3>KNN</h3>
-<table>
-<tr><th>Metric</th><th>Training</th><th>Testing</th></tr>
-<tr><td>Accuracy</td><td>95%</td><td>100%</td></tr>
-<tr><td>Setosa F1</td><td>1.00</td><td>1.00</td></tr>
-<tr><td>Versicolor F1</td><td>0.93</td><td>1.00</td></tr>
-<tr><td>Virginica F1</td><td>0.92</td><td>1.00</td></tr>
-</table>
-
-<h3>Naive Bayes</h3>
-<table>
-<tr><th>Metric</th><th>Training</th><th>Testing</th></tr>
-<tr><td>Accuracy</td><td>95%</td><td>100%</td></tr>
-<tr><td>Setosa F1</td><td>1.00</td><td>1.00</td></tr>
-<tr><td>Versicolor F1</td><td>0.93</td><td>1.00</td></tr>
-<tr><td>Virginica F1</td><td>0.92</td><td>1.00</td></tr>
-</table>
-
 <h2>File Structure</h2>
 <pre>
 iris-classifier/
@@ -152,35 +65,19 @@ iris-classifier/
 └── test_Navia.json
 </pre>
 
-<h2>Deployment on Render</h2>
-
-<h3>requirements.txt</h3>
+<h2>Deployment</h2>
 <pre>
-Flask==3.1.2
-scikit-learn==1.8.0
-numpy==2.4.2
-gunicorn==25.0.2
-pandas==3.0.0
-joblib==1.5.3
+web: gunicorn app:app
 </pre>
 
-<h3>Procfile</h3>
-<pre>web: gunicorn app:app</pre>
-
-<h2>Local Development</h2>
+<h2>Local Setup</h2>
 <pre>
 git clone https://github.com/yourusername/iris-classifier.git
 cd iris-classifier
 python -m venv venv
-source venv/bin/activate
 pip install -r requirements.txt
 python app.py
 </pre>
-
-<h2>How It Works</h2>
-<p>
-User inputs → Flask route → Model loads → Prediction → Metrics → Display.
-</p>
 
 <h2>Future Enhancements</h2>
 <ul>
@@ -193,10 +90,4 @@ User inputs → Flask route → Model loads → Prediction → Metrics → Displ
 <h2>Contact</h2>
 <p>Email: bandisaiteja2@gmail.com</p>
 
-<h2>License</h2>
-<p>Open-source for educational and commercial use.</p>
-
 <p><b>Created by Bandi Saiteja</b></p>
-
-</body>
-</html>
